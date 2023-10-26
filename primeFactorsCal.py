@@ -1,13 +1,12 @@
 #5- Kullanıcıdan girilen sayının asal çarpanlarını bulan bir program yazınız. 
-def primeFactorsCal(n):
+def primeFactorsCal(number):
     durum = False 
-    if n<2:
+    if number<2:
         durum = False
-    if n==2 or n==3:
+    if number==2 or number==3:
         durum = True
-    kok = n**0.5
-    for i in range(2,int(kok)+1):
-        if n % i ==0 :
+    for i in range(2, number):
+        if number % i ==0 :
             durum = False
             break
         else:
